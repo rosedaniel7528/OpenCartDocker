@@ -22,7 +22,7 @@ public class SIT extends BaseTest{
 	@Test(dataProvider="readData",retryAnalyzer = testComponents.Retry.class)
     public void placeorder(HashMap<String,String> data) throws InterruptedException {
 		
-		
+		// code
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		String productName = data.get("product");
