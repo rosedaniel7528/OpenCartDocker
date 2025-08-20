@@ -1,70 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="16" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-03T20:38:24 IST" name="Openacart" finished-at="2024-12-03T20:38:44 IST" duration-ms="20090">
+  <suite started-at="2025-05-21T12:24:34 IST" name="Default suite" finished-at="2025-05-21T12:24:43 IST" duration-ms="9348">
     <groups>
     </groups>
-    <test started-at="2024-12-03T20:38:24 IST" name="Test3" finished-at="2024-12-03T20:38:37 IST" duration-ms="12405">
+    <test started-at="2025-05-21T12:24:34 IST" name="Default test" finished-at="2025-05-21T12:24:43 IST" duration-ms="9348">
       <class name="SeleniumAutomation.Opencart.SIT">
-        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@32a68f4f]" started-at="2024-12-03T20:38:24 IST" name="initilize" finished-at="2024-12-03T20:38:31 IST" duration-ms="7230" status="PASS">
+        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@7722c3c3]" started-at="2025-05-21T12:24:34 IST" name="initilize" finished-at="2025-05-21T12:24:36 IST" duration-ms="2594" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@45fd9a4d]]>
+                <![CDATA[org.testng.TestRunner@6b68cb27]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="javactions()[pri:0, instance:SeleniumAutomation.Opencart.SIT@32a68f4f]" started-at="2024-12-03T20:38:31 IST" name="javactions" finished-at="2024-12-03T20:38:33 IST" duration-ms="1422" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- javactions -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@32a68f4f]" started-at="2024-12-03T20:38:33 IST" name="quit" finished-at="2024-12-03T20:38:37 IST" duration-ms="3646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- SeleniumAutomation.Opencart.SIT -->
-    </test> <!-- Test3 -->
-    <test started-at="2024-12-03T20:38:24 IST" name="Test4" finished-at="2024-12-03T20:38:39 IST" duration-ms="14328">
-      <class name="SeleniumAutomation.Opencart.SIT">
-        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@31dadd46]" started-at="2024-12-03T20:38:24 IST" name="initilize" finished-at="2024-12-03T20:38:31 IST" duration-ms="6858" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@50468873]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="brokenLinks()[pri:0, instance:SeleniumAutomation.Opencart.SIT@31dadd46]" started-at="2024-12-03T20:38:31 IST" name="brokenLinks" finished-at="2024-12-03T20:38:37 IST" duration-ms="5974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- brokenLinks -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@31dadd46]" started-at="2024-12-03T20:38:37 IST" name="quit" finished-at="2024-12-03T20:38:39 IST" duration-ms="1449" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- SeleniumAutomation.Opencart.SIT -->
-    </test> <!-- Test4 -->
-    <test started-at="2024-12-03T20:38:24 IST" name="Test" finished-at="2024-12-03T20:38:43 IST" duration-ms="18437">
-      <class name="SeleniumAutomation.Opencart.SIT">
-        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@5f9be66c]" started-at="2024-12-03T20:38:24 IST" name="initilize" finished-at="2024-12-03T20:38:31 IST" duration-ms="6960" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@146587a2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="placeorder(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Opencart.SIT@5f9be66c]" started-at="2024-12-03T20:38:31 IST" name="placeorder" data-provider="readData" finished-at="2024-12-03T20:38:42 IST" duration-ms="10746" status="PASS">
+        <test-method signature="placeorder(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Opencart.SIT@7722c3c3]" started-at="2025-05-21T12:24:36 IST" name="placeorder" data-provider="readData" finished-at="2025-05-21T12:24:43 IST" duration-ms="6549" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,41 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeorder -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@5f9be66c]" started-at="2024-12-03T20:38:42 IST" name="quit" finished-at="2024-12-03T20:38:43 IST" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@7722c3c3]" started-at="2025-05-21T12:24:43 IST" name="quit" finished-at="2025-05-21T12:24:43 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- SeleniumAutomation.Opencart.SIT -->
-    </test> <!-- Test -->
-    <test started-at="2024-12-03T20:38:24 IST" name="Test2" finished-at="2024-12-03T20:38:44 IST" duration-ms="20090">
-      <class name="SeleniumAutomation.Opencart.SIT">
-        <test-method is-config="true" signature="initilize(org.testng.ITestContext)[pri:0, instance:SeleniumAutomation.Opencart.SIT@1b955cac]" started-at="2024-12-03T20:38:24 IST" name="initilize" finished-at="2024-12-03T20:38:31 IST" duration-ms="6970" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5f0e9815]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="searchBox(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Opencart.SIT@1b955cac]" started-at="2024-12-03T20:38:31 IST" name="searchBox" data-provider="searchboxdata" finished-at="2024-12-03T20:38:44 IST" duration-ms="12653" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{product=iPod Classic}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBox -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:SeleniumAutomation.Opencart.SIT@1b955cac]" started-at="2024-12-03T20:38:44 IST" name="quit" finished-at="2024-12-03T20:38:44 IST" duration-ms="204" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- SeleniumAutomation.Opencart.SIT -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Openacart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
