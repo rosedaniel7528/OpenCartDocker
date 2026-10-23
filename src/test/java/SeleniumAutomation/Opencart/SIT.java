@@ -86,7 +86,14 @@ public class SIT extends BaseTest{
 	@DataProvider
 	public Object[][] readData() throws IOException {
 		List<HashMap<String, String>> data =dataReader(System.getProperty("user.dir") + "//src//test//java//testdata//Sit.json");
-		return new Object[][] {{data.get(0)}};
+		
+		Object[][] dataArray = new Object[data.size()][1];
+		
+		for(int i =0;i<data.size();i++) {
+			dataArray[i][0] = data.get(i);
+		}
+		
+		return dataArray;
 	}
 	
 	@DataProvider

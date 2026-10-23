@@ -1,1 +1,22 @@
-/target/
+# Build output (Maven rebuilds it in the pipeline)
+target/
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Mac
+.DS_Store
+
+# Test output (regenerated on every run)
+reports/
+screenshots/
+test-output/
+logs/
+*.log
+
+# Secrets
+.env
