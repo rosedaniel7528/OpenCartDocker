@@ -58,6 +58,7 @@ public class BaseTest {
 				option.setPlatformName("linux");
 				option.setPageLoadStrategy(PageLoadStrategy.EAGER);
 				try {
+					// this is remote webdriver with the port number
 					driver = new RemoteWebDriver(new URL("http://localhost:4444"), option);
 				}catch (MalformedURLException e){
 					throw new RuntimeException(e);
