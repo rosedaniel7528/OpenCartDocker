@@ -39,9 +39,9 @@ public class BaseTest {
 
 
 		if(browser.equalsIgnoreCase("chrome")){
+			ChromeOptions option = new ChromeOptions();
 			if(platform.equalsIgnoreCase("local")){
 
-				ChromeOptions option = new ChromeOptions();
 				option.setExperimentalOption("excludeSwitches",
 						Arrays.asList("disable-popup-blocking"));
 				//option.addArguments("--remote-allow-origins=*");
@@ -52,7 +52,7 @@ public class BaseTest {
 				return driver;
 			} else if (platform.equalsIgnoreCase("remote")) {
 
-				ChromeOptions option = new ChromeOptions();
+
 				option.setExperimentalOption("excludeSwitches",
 						Arrays.asList("disable-popup-blocking"));
 				option.setPlatformName("linux");
@@ -67,7 +67,23 @@ public class BaseTest {
 				driver.manage().window().maximize();
 				context.setAttribute("WebDriver",driver);
 				return driver;
+			} else if (platform.equalsIgnoreCase("remote_git")) {
+				option.setExperimentalOption("excludeSwitches",
+						Arrays.asList("disable-popup-blocking"));
+				option.setPlatformName("linux");
+				option.setPageLoadStrategy(PageLoadStrategy.EAGER);
+				option.addArguments("--headless");
+				option.addArguments("--disable-gpu");
+				option.addArguments("--no-sandbox");
+				option.addArguments("--remote-allow-origins=*");
+				driver = new ChromeDriver(option);
+				driver.get("https://awesomeqa.com/ui/index.php?route=common/home");
+				driver.manage().window().maximize();
+				context.setAttribute("WebDriver",driver);
+				return driver;
 			}
+
+
 			System.out.println("Platform name entered is not supported");
 			return null;
 
