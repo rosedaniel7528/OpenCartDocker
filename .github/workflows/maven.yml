@@ -40,8 +40,8 @@ jobs:
     - name: Build with Maven
       run: >
        mvn clean test -PREG -Dplatform=remote_git
-     #  -Dsurefire.suiteXmlFiles=${{inputs.xmlfilename}}
-     #  -Dmavn.test.failure.ignore=true
+       -Dsurefire.suiteXmlFiles=${{ inputs.xmlfilename || 'TesNg-suite/reg.xml' }}
+       -Dmaven.test.failure.ignore=true
 
 #      Report generation
     - name: report artifact
