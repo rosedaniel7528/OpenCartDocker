@@ -111,6 +111,19 @@ public class BaseTest {
 				driver.manage().window().maximize();
 				context.setAttribute("WebDriver",driver);
 				return driver;
+			}else if (platform.equalsIgnoreCase("remote_git")) {
+				FirefoxOptions option = new FirefoxOptions();
+				option.setPlatformName("linux");
+				option.setPageLoadStrategy(PageLoadStrategy.EAGER);
+				option.addArguments("--headless");
+				option.addArguments("--disable-gpu");
+				option.addArguments("--no-sandbox");
+				option.addArguments("--remote-allow-origins=*");
+				driver = new FirefoxDriver(option);
+				driver.get("https://awesomeqa.com/ui/index.php?route=common/home");
+				driver.manage().window().maximize();
+				context.setAttribute("WebDriver",driver);
+				return driver;
 			}
 			System.out.println("Platform name entered is not supported");
 			return null;
