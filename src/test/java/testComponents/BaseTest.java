@@ -91,7 +91,7 @@ public class BaseTest {
 
 			if(platform.equalsIgnoreCase("local")){
 				FirefoxOptions option = new FirefoxOptions();
-				//option.addArguments("--remote-allow-origins=*");
+				option.addArguments("--remote-allow-origins=*");
 				driver = new FirefoxDriver(option);
 				driver.get("https://awesomeqa.com/ui/index.php?route=common/home");
 				driver.manage().window().maximize();
@@ -118,7 +118,7 @@ public class BaseTest {
 				option.addArguments("--headless");
 				option.addArguments("--disable-gpu");
 				option.addArguments("--no-sandbox");
-				option.addArguments("--remote-allow-origins=*");
+				//option.addArguments("--remote-allow-origins=*");
 				driver = new FirefoxDriver(option);
 				driver.get("https://awesomeqa.com/ui/index.php?route=common/home");
 				driver.manage().window().maximize();
