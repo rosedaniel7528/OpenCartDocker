@@ -41,7 +41,7 @@ jobs:
       run: >
        mvn clean test -PREG -Dplatform=remote_git
      #  -Dsurefire.suiteXmlFiles=${{inputs.xmlfilename}}
-       -Dmavn.test.failure.ignore=true
+     #  -Dmavn.test.failure.ignore=true
 
 #      Report generation
     - name: report artifact
